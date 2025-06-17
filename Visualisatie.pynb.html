@@ -1,0 +1,1010 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Visualisatie.pynb';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="Reflection.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="Preprocessing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Introduction.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Introduction.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/HannaDaorah10/InfoVis-40/blob/main/docs/Visualisatie.pynb.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/HannaDaorah10/InfoVis-40" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/HannaDaorah10/InfoVis-40/issues/new?title=Issue%20on%20page%20%2FVisualisatie.pynb.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Visualisatie.pynb.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Laad de originele datasets</span>
+<span class="n">monthly_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
+<span class="n">global_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;global-data-on-sustainable-energy (1).csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Laad de originele datasets</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">monthly_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">main_sources</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Solar&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Total combustible fuels&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">monthly_df</span><span class="p">[</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">main_sources</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;-&#39;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+<span class="n">pivot</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;VALUE&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">pivot</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pivot</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">pivot</span><span class="p">[</span><span class="n">col</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Maandelijkse Energieproductie per Bron (GWh)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Jaar&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Productie (GWh)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d8b4fa7617f72921548e0ed83e0dde1d9423cac9a946834d51a0074472a27bcd.png" src="_images/d8b4fa7617f72921548e0ed83e0dde1d9423cac9a946834d51a0074472a27bcd.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stack_sources</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Solar&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Hydro&#39;</span><span class="p">,</span> <span class="s1">&#39;Total combustible fuels&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">monthly_df</span><span class="p">[</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">stack_sources</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;-&#39;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+<span class="n">pivot_share</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;share&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">pivot_share</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">area</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Aandeel Energiebronnen in Totale Productie&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Jaar&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Aandeel&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/0debf067bf0d8d6f76d1bde0f04510dfb834ccbec93367bc8abb3d043292e8ea.png" src="_images/0debf067bf0d8d6f76d1bde0f04510dfb834ccbec93367bc8abb3d043292e8ea.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+
+<span class="c1"># Kolomnaam instellen</span>
+<span class="n">col</span> <span class="o">=</span> <span class="s1">&#39;Renewable energy share in the total final energy consumption (%)&#39;</span>
+
+<span class="c1"># Filter op rijen met geldige waarden</span>
+<span class="n">filtered</span> <span class="o">=</span> <span class="n">global_df</span><span class="p">[[</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">col</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Kies per land het laatste jaar met data</span>
+<span class="n">latest</span> <span class="o">=</span> <span class="n">filtered</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Entity&#39;</span><span class="p">)[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">latest</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">col</span><span class="p">:</span> <span class="s1">&#39;Renewable Share (%)&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Plot met Plotly</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span>
+    <span class="n">latest</span><span class="p">,</span>
+    <span class="n">locations</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span>
+    <span class="n">locationmode</span><span class="o">=</span><span class="s2">&quot;country names&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;Renewable Share (%)&quot;</span><span class="p">,</span>
+    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s2">&quot;YlGn&quot;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Laatste Beschikbare Renewable Energy Share per Land&quot;</span><span class="p">,</span>
+    <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span>
+    <span class="n">hover_data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Year&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">geo</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showframe</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">showcoastlines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">projection_type</span><span class="o">=</span><span class="s2">&quot;natural earth&quot;</span>
+    <span class="p">),</span>
+    <span class="n">coloraxis_colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;% Renewable&quot;</span><span class="p">,</span>
+        <span class="n">ticks</span><span class="o">=</span><span class="s2">&quot;outside&quot;</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">global_df</span><span class="p">[</span><span class="n">global_df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2019</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span>
+    <span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;gdp_per_capita&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Renewable energy share in the total final energy consumption (%)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Access to electricity (</span><span class="si">% o</span><span class="s1">f population)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Access to clean fuels for cooking&#39;</span>
+<span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;gdp_per_capita&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Renewable energy share in the total final energy consumption (%)&quot;</span><span class="p">,</span>
+    <span class="n">size</span><span class="o">=</span><span class="s2">&quot;Access to electricity (</span><span class="si">% o</span><span class="s2">f population)&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;Access to clean fuels for cooking&quot;</span><span class="p">,</span>
+    <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span>
+    <span class="n">size_max</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;GDP vs. Renewable Share (2020)&quot;</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;gdp_per_capita&quot;</span><span class="p">:</span> <span class="s2">&quot;GDP per capita&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Renewable energy share in the total final energy consumption (%)&quot;</span><span class="p">:</span> <span class="s2">&quot;Renewable Share (%)&quot;</span><span class="p">}</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Kies een recent jaar met voldoende data</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">2019</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;gdp_per_capita&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Renewable energy share in the total final energy consumption (%)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Access to electricity (</span><span class="si">% o</span><span class="s1">f population)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Access to clean fuels for cooking&#39;</span>
+<span class="p">]</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">global_df</span><span class="p">[</span><span class="n">global_df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">][</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Herbenoemen voor duidelijke labels</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="s1">&#39;Renewable Share (%)&#39;</span><span class="p">,</span> <span class="s1">&#39;Electricity Access (%)&#39;</span><span class="p">,</span> <span class="s1">&#39;Clean Cooking (%)&#39;</span><span class="p">]</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">diag_kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">plot_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;alpha&#39;</span><span class="p">:</span><span class="mf">0.6</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Scatter Plot Matrix (</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.02</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\jorda\anaconda3\Lib\site-packages\seaborn\axisgrid.py:118: UserWarning:
+
+The figure layout has changed to tight
+
+C:\Users\jorda\AppData\Local\Temp\ipykernel_54832\2971341400.py:20: UserWarning:
+
+The figure layout has changed to tight
+</pre></div>
+</div>
+<img alt="_images/c19beefa3d2ba688d97d6bd5bc0c5722d5be9ad718258dfb9f657d2508cd1c2c.png" src="_images/c19beefa3d2ba688d97d6bd5bc0c5722d5be9ad718258dfb9f657d2508cd1c2c.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kies één maand/jaar</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">month</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">monthly_df</span><span class="p">[(</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">month</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Alleen relevante bronnen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Total combustible fuels&#39;</span><span class="p">,</span> <span class="s1">&#39;Solar&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Hydro&#39;</span><span class="p">])]</span>
+
+<span class="c1"># Categoriseer als &#39;Fossil&#39; of &#39;Renewable&#39;</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">label_type</span><span class="p">(</span><span class="n">product</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s1">&#39;Fossil&#39;</span> <span class="k">if</span> <span class="n">product</span> <span class="o">==</span> <span class="s1">&#39;Total combustible fuels&#39;</span> <span class="k">else</span> <span class="s1">&#39;Renewable&#39;</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">label_type</span><span class="p">)</span>
+
+<span class="c1"># Groepeer productie per land per type</span>
+<span class="n">agg</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;COUNTRY&#39;</span><span class="p">,</span> <span class="s1">&#39;Type&#39;</span><span class="p">])[</span><span class="s1">&#39;VALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Top 10 landen met hoogste totale productie</span>
+<span class="n">top_countries</span> <span class="o">=</span> <span class="n">agg</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">top_agg</span> <span class="o">=</span> <span class="n">agg</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">top_countries</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+
+<span class="c1"># Plot</span>
+<span class="n">top_agg</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fossiele vs. Hernieuwbare Energieproductie - Top 10 Landen (</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">month</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Productie (GWh)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ab153893f2b238f0151f3ee9f3320ff81472c38f53bf25facdcd00d6426fb216.png" src="_images/ab153893f2b238f0151f3ee9f3320ff81472c38f53bf25facdcd00d6426fb216.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Dataset inladen</span>
+<span class="n">monthly_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># ❌ Lijst met niet-landen uitsluiten</span>
+<span class="n">exclude_entities</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Africa&#39;</span><span class="p">,</span> <span class="s1">&#39;Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span> <span class="s1">&#39;South America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;European Union (27)&#39;</span><span class="p">,</span> <span class="s1">&#39;European Union (28)&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD&#39;</span><span class="p">,</span> <span class="s1">&#39;Non-OECD&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Non-OECD Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Non-OECD Europe and Eurasia&#39;</span><span class="p">,</span> <span class="s1">&#39;Middle East&#39;</span><span class="p">,</span> <span class="s1">&#39;Eurasia&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Other Asia Pacific&#39;</span><span class="p">,</span> <span class="s1">&#39;Central &amp; South America&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Net Zero by 2050 scenario&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;IEA Total&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Asia Oceania&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OECD Total&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Asia Oceania&#39;</span>
+<span class="p">]</span>
+
+<span class="c1"># 📅 Filter op jaar + maand</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">month</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">monthly_df</span><span class="p">[(</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">month</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># 🔌 Alleen gewenste producten</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Total combustible fuels&#39;</span><span class="p">,</span> <span class="s1">&#39;Solar&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Hydro&#39;</span><span class="p">])]</span>
+
+<span class="c1"># 🧹 Verwijder niet-landen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;COUNTRY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">exclude_entities</span><span class="p">)]</span>
+
+<span class="c1"># 🌱 Label &#39;Fossil&#39; of &#39;Renewable&#39;</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Fossil&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Total combustible fuels&#39;</span> <span class="k">else</span> <span class="s1">&#39;Renewable&#39;</span><span class="p">)</span>
+
+<span class="c1"># 📊 Groepeer per land/type</span>
+<span class="n">agg</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;COUNTRY&#39;</span><span class="p">,</span> <span class="s1">&#39;Type&#39;</span><span class="p">])[</span><span class="s1">&#39;VALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># 🔝 Top 10 landen met hoogste totale productie</span>
+<span class="n">top_countries</span> <span class="o">=</span> <span class="n">agg</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">top_agg</span> <span class="o">=</span> <span class="n">agg</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">top_countries</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+
+<span class="c1"># 📈 Plot de bar chart</span>
+<span class="n">top_agg</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fossiele vs. Hernieuwbare Energieproductie – Top 10 Landen (</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">month</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Productie (GWh)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/28ace14833e5531f412d8f6d35a79181b4d27c0b441a6e17c93c68282800d6a5.png" src="_images/28ace14833e5531f412d8f6d35a79181b4d27c0b441a6e17c93c68282800d6a5.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Dataset laden</span>
+<span class="n">monthly_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Aggregaten uitsluiten</span>
+<span class="n">exclude_entities</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Africa&#39;</span><span class="p">,</span> <span class="s1">&#39;Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span> <span class="s1">&#39;South America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;European Union (27)&#39;</span><span class="p">,</span> <span class="s1">&#39;European Union (28)&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD&#39;</span><span class="p">,</span> <span class="s1">&#39;Non-OECD&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Non-OECD Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Non-OECD Europe and Eurasia&#39;</span><span class="p">,</span> <span class="s1">&#39;Middle East&#39;</span><span class="p">,</span> <span class="s1">&#39;Eurasia&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Other Asia Pacific&#39;</span><span class="p">,</span> <span class="s1">&#39;Central &amp; South America&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Net Zero by 2050 scenario&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;IEA Total&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Asia Oceania&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OECD Total&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Asia Oceania&#39;</span>
+<span class="p">]</span>
+
+<span class="c1"># Filter op maand en jaar</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">month</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">monthly_df</span><span class="p">[(</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">monthly_df</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">month</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Alleen gewenste energiebronnen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Total combustible fuels&#39;</span><span class="p">,</span> <span class="s1">&#39;Solar&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Hydro&#39;</span><span class="p">])]</span>
+
+<span class="c1"># Alleen echte landen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;COUNTRY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">exclude_entities</span><span class="p">)]</span>
+
+<span class="c1"># Label &#39;Fossil&#39; of &#39;Renewable&#39;</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;PRODUCT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Fossil&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Total combustible fuels&#39;</span> <span class="k">else</span> <span class="s1">&#39;Renewable&#39;</span><span class="p">)</span>
+
+<span class="c1"># Groepeer per land en type</span>
+<span class="n">agg</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;COUNTRY&#39;</span><span class="p">,</span> <span class="s1">&#39;Type&#39;</span><span class="p">])[</span><span class="s1">&#39;VALUE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Kies top 10 landen met hoogste totale productie</span>
+<span class="n">top_countries</span> <span class="o">=</span> <span class="n">agg</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">top_agg</span> <span class="o">=</span> <span class="n">agg</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">top_countries</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+
+<span class="c1"># Omzetten naar percentage</span>
+<span class="n">top_agg_percent</span> <span class="o">=</span> <span class="n">top_agg</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">top_agg</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Plot</span>
+<span class="n">top_agg_percent</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;#d95f02&#39;</span><span class="p">,</span> <span class="s1">&#39;#1b9e77&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Aandeel Fossiel vs. Hernieuwbaar in Energieproductie – Top 10 Landen (</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">month</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Aandeel van totale productie (%)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Land&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Type&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a62c16355cea2372408d396f351845e542f6a450ebcb8ba37c218d8d8b6e68f3.png" src="_images/a62c16355cea2372408d396f351845e542f6a450ebcb8ba37c218d8d8b6e68f3.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># === 1. Data inladen</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;global-data-on-sustainable-energy (1).csv&quot;</span><span class="p">)</span>  <span class="c1"># pas naam aan indien nodig</span>
+
+<span class="c1"># === 2. Aggregaten verwijderen</span>
+<span class="n">exclude_entities</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Africa&#39;</span><span class="p">,</span> <span class="s1">&#39;Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;North America&#39;</span><span class="p">,</span> <span class="s1">&#39;South America&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;European Union (27)&#39;</span><span class="p">,</span> <span class="s1">&#39;European Union (28)&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD&#39;</span><span class="p">,</span> <span class="s1">&#39;Non-OECD&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Non-OECD Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Non-OECD Europe and Eurasia&#39;</span><span class="p">,</span> <span class="s1">&#39;Middle East&#39;</span><span class="p">,</span> <span class="s1">&#39;Eurasia&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Other Asia Pacific&#39;</span><span class="p">,</span> <span class="s1">&#39;Central &amp; South America&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Net Zero by 2050 scenario&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;IEA Total&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;IEA Asia Oceania&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OECD Total&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;OECD Asia Oceania&#39;</span>
+<span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">exclude_entities</span><span class="p">)]</span>
+
+<span class="c1"># === 3. Relevante kolommen</span>
+<span class="n">x_col</span> <span class="o">=</span> <span class="s1">&#39;gdp_per_capita&#39;</span>
+<span class="n">y_col</span> <span class="o">=</span> <span class="s1">&#39;Renewable energy share in the total final energy consumption (%)&#39;</span>
+<span class="n">size_col</span> <span class="o">=</span> <span class="s1">&#39;Access to electricity (</span><span class="si">% o</span><span class="s1">f population)&#39;</span>
+
+<span class="c1"># Alleen landen met complete gegevens</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">x_col</span><span class="p">,</span> <span class="n">y_col</span><span class="p">,</span> <span class="n">size_col</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># === 4. Laatste beschikbare jaar per land</span>
+<span class="n">latest_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Entity&#39;</span><span class="p">)[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># === 5. Selecteer top 10 &amp; bottom 10 op renewable share</span>
+<span class="n">sorted_df</span> <span class="o">=</span> <span class="n">latest_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="n">y_col</span><span class="p">)</span>
+<span class="n">subset_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sorted_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">sorted_df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)])</span>
+
+<span class="c1"># === 6. Medianen berekenen</span>
+<span class="n">x_median</span> <span class="o">=</span> <span class="n">latest_df</span><span class="p">[</span><span class="n">x_col</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">y_median</span> <span class="o">=</span> <span class="n">latest_df</span><span class="p">[</span><span class="n">y_col</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+
+<span class="c1"># === 7. Trendlijn</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">subset_df</span><span class="p">[[</span><span class="n">x_col</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">subset_df</span><span class="p">[[</span><span class="n">y_col</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+<span class="n">trend_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">X</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">trend_y</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">trend_x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># === 8. Bubble scatterplot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">subset_df</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x_col</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y_col</span><span class="p">,</span>
+    <span class="n">size</span><span class="o">=</span><span class="n">size_col</span><span class="p">,</span>
+    <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span>
+    <span class="n">size_max</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">1400</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">y_col</span><span class="p">,</span>
+    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s2">&quot;Viridis&quot;</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">{</span>
+        <span class="n">x_col</span><span class="p">:</span> <span class="s2">&quot;GDP per Capita&quot;</span><span class="p">,</span>
+        <span class="n">y_col</span><span class="p">:</span> <span class="s2">&quot;Renewable Energy Share (%)&quot;</span><span class="p">,</span>
+        <span class="n">size_col</span><span class="p">:</span> <span class="s2">&quot;Electricity Access (%)&quot;</span>
+    <span class="p">},</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Top &amp; Bottom 10: Sustainability vs GDP per Capita – Kwadrantanalyse&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># === 9. Trendlijn toevoegen</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">trend_x</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">trend_y</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Trendline&#39;</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;dash&#39;</span><span class="p">)</span>
+<span class="p">))</span>
+
+<span class="c1"># === 10. Kwadrantlijnen</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;line&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="n">x_median</span><span class="p">,</span> <span class="n">y0</span><span class="o">=</span><span class="n">subset_df</span><span class="p">[</span><span class="n">y_col</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
+    <span class="n">x1</span><span class="o">=</span><span class="n">x_median</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="n">subset_df</span><span class="p">[</span><span class="n">y_col</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightgray&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s2">&quot;dot&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_shape</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;line&quot;</span><span class="p">,</span>
+    <span class="n">x0</span><span class="o">=</span><span class="n">subset_df</span><span class="p">[</span><span class="n">x_col</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">y0</span><span class="o">=</span><span class="n">y_median</span><span class="p">,</span>
+    <span class="n">x1</span><span class="o">=</span><span class="n">subset_df</span><span class="p">[</span><span class="n">x_col</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">y1</span><span class="o">=</span><span class="n">y_median</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightgray&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s2">&quot;dot&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># === 11. Symmetrische assen</span>
+<span class="n">x_range</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">x_median</span> <span class="o">-</span> <span class="n">subset_df</span><span class="p">[</span><span class="n">x_col</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">subset_df</span><span class="p">[</span><span class="n">x_col</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">x_median</span><span class="p">)</span>
+<span class="n">y_range</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">y_median</span> <span class="o">-</span> <span class="n">subset_df</span><span class="p">[</span><span class="n">y_col</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">subset_df</span><span class="p">[</span><span class="n">y_col</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">y_median</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="n">x_median</span> <span class="o">-</span> <span class="n">x_range</span><span class="p">,</span> <span class="n">x_median</span> <span class="o">+</span> <span class="n">x_range</span><span class="p">]),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="n">y_median</span> <span class="o">-</span> <span class="n">y_range</span><span class="p">,</span> <span class="n">y_median</span> <span class="o">+</span> <span class="n">y_range</span><span class="p">])</span>
+<span class="p">)</span>
+
+<span class="c1"># === 12. Kwadrantlabels</span>
+<span class="n">quadrant_labels</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;💰🌪 High GDP, Low Renewable&quot;</span><span class="p">,</span> <span class="n">x_median</span> <span class="o">+</span> <span class="n">x_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">y_median</span> <span class="o">-</span> <span class="n">y_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;🌱💰 High GDP, High Renewable&quot;</span><span class="p">,</span> <span class="n">x_median</span> <span class="o">+</span> <span class="n">x_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">y_median</span> <span class="o">+</span> <span class="n">y_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;⚠️ Low GDP, Low Renewable&quot;</span><span class="p">,</span> <span class="n">x_median</span> <span class="o">-</span> <span class="n">x_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">y_median</span> <span class="o">-</span> <span class="n">y_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;🌍💡 Low GDP, High Renewable&quot;</span><span class="p">,</span> <span class="n">x_median</span> <span class="o">-</span> <span class="n">x_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">y_median</span> <span class="o">+</span> <span class="n">y_range</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">quadrant_labels</span><span class="p">:</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">=</span><span class="n">text</span><span class="p">,</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+        <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">),</span>
+        <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;rgba(255,255,255,0.7)&quot;</span><span class="p">,</span>
+        <span class="n">bordercolor</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span>
+        <span class="n">borderwidth</span><span class="o">=</span><span class="mi">1</span>
+    <span class="p">)</span>
+
+<span class="c1"># === 13. Toelichting onderaan (zoals voorbeeld)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Deze grafiek toont het contrast tussen de 10 landen met de hoogste en laagste hernieuwbare energiedeling.&lt;br&gt;&quot;</span>
+         <span class="s2">&quot;De lijnen markeren het mediane GDP per capita en het mediane aandeel hernieuwbare energie.&lt;br&gt;&quot;</span>
+         <span class="s2">&quot;De trendlijn toont dat hogere GDP niet automatisch leidt tot meer duurzaamheid.&quot;</span><span class="p">,</span>
+    <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+    <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">xref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s1">&#39;paper&#39;</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.35</span><span class="p">,</span>
+    <span class="n">bordercolor</span><span class="o">=</span><span class="s2">&quot;lightgray&quot;</span><span class="p">,</span>
+    <span class="n">borderwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;rgba(255,255,255,0.9)&quot;</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">),</span>
+<span class="p">)</span>
+
+<span class="c1"># === 14. Layout afronden</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="s1">&#39;simple_white&#39;</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">120</span><span class="p">))</span>
+
+<span class="c1"># === 15. Tonen</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-env-mijnboek-py"
+        },
+        kernelOptions: {
+            name: "conda-env-mijnboek-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-env-mijnboek-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Preprocessing.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Reflection.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Info-Vis group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
